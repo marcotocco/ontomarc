@@ -1,0 +1,80 @@
+@prefix ontomarc: <https://purl.org/ontomarc/onto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+
+@base <https://purl.org/ontomarc/onto> .
+
+<https://purl.org/ontomarc/onto>
+    a owl:Ontology ;
+    owl:versionIRI <https://purl.org/ontomarc/onto/releases/0.0.1> ;
+    owl:versionInfo "0.0.1" ;
+    dcterms:title "Ontomarc Test Ontology"@en ;
+    dcterms:description "A minimal test ontology created to verify PURL redirects, hash-based IRIs, and GitHub Pages publication."@en ;
+    dcterms:creator "Marco Tocco" ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    vann:preferredNamespacePrefix "ontomarc" ;
+    vann:preferredNamespaceUri "https://purl.org/ontomarc/onto#" ;
+    rdfs:label "Ontomarc Test Ontology"@en ;
+    rdfs:comment "This ontology is only a temporary test for checking stable IRIs, PURL redirects, hash-based term IRIs, and static web publication."@en .
+
+#################################################################
+# Classes
+#################################################################
+
+ontomarc:Device
+    a owl:Class ;
+    rdfs:label "Device"@en ;
+    rdfs:comment "A generic device used in this test ontology."@en .
+
+ontomarc:Measurement
+    a owl:Class ;
+    rdfs:label "Measurement"@en ;
+    rdfs:comment "A generic measurement produced by a device."@en .
+
+#################################################################
+# Object properties
+#################################################################
+
+ontomarc:recordsMeasurement
+    a owl:ObjectProperty ;
+    rdfs:domain ontomarc:Device ;
+    rdfs:range ontomarc:Measurement ;
+    rdfs:label "records measurement"@en ;
+    rdfs:comment "Links a device to a measurement it records."@en .
+
+#################################################################
+# Datatype properties
+#################################################################
+
+ontomarc:deviceCode
+    a owl:DatatypeProperty ;
+    rdfs:domain ontomarc:Device ;
+    rdfs:range xsd:string ;
+    rdfs:label "device code"@en ;
+    rdfs:comment "A textual identifier for a device."@en .
+
+ontomarc:numericValue
+    a owl:DatatypeProperty ;
+    rdfs:domain ontomarc:Measurement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "numeric value"@en ;
+    rdfs:comment "The numeric value of a measurement."@en .
+
+#################################################################
+# Example individuals
+#################################################################
+
+ontomarc:TestDevice01
+    a ontomarc:Device ;
+    ontomarc:deviceCode "DEV-001" ;
+    ontomarc:recordsMeasurement ontomarc:TestMeasurement01 ;
+    rdfs:label "Test device 01"@en .
+
+ontomarc:TestMeasurement01
+    a ontomarc:Measurement ;
+    ontomarc:numericValue 42.5 ;
+    rdfs:label "Test measurement 01"@en .

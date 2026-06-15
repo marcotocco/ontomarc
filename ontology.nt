@@ -1,0 +1,119 @@
+<https://purl.org/ontomarc/onto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://purl.org/ontomarc/onto> <http://www.w3.org/2002/07/owl#versionIRI> <https://purl.org/ontomarc/onto/releases/0.0.1> .
+<https://purl.org/ontomarc/onto> <http://purl.org/dc/terms/creator> "Marco Tocco" .
+<https://purl.org/ontomarc/onto> <http://purl.org/dc/terms/description> "A minimal test ontology created to verify PURL redirects, hash-based IRIs, and GitHub Pages publication."@en .
+<https://purl.org/ontomarc/onto> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://purl.org/ontomarc/onto> <http://purl.org/dc/terms/title> "Ontomarc Test Ontology"@en .
+<https://purl.org/ontomarc/onto> <http://purl.org/vocab/vann/preferredNamespacePrefix> "ontomarc" .
+<https://purl.org/ontomarc/onto> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://purl.org/ontomarc/onto#" .
+<https://purl.org/ontomarc/onto> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology is only a temporary test for checking stable IRIs, PURL redirects, hash-based term IRIs, and static web publication."@en .
+<https://purl.org/ontomarc/onto> <http://www.w3.org/2000/01/rdf-schema#label> "Ontomarc Test Ontology"@en .
+<https://purl.org/ontomarc/onto> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/ontomarc/onto#recordsMeasurement
+<https://purl.org/ontomarc/onto#recordsMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.org/ontomarc/onto#recordsMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/ontomarc/onto#Device> .
+<https://purl.org/ontomarc/onto#recordsMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.org/ontomarc/onto#Measurement> .
+<https://purl.org/ontomarc/onto#recordsMeasurement> <http://www.w3.org/2000/01/rdf-schema#comment> "Links a device to a measurement it records."@en .
+<https://purl.org/ontomarc/onto#recordsMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "records measurement"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/ontomarc/onto#deviceCode
+<https://purl.org/ontomarc/onto#deviceCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/ontomarc/onto#deviceCode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/ontomarc/onto#Device> .
+<https://purl.org/ontomarc/onto#deviceCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://purl.org/ontomarc/onto#deviceCode> <http://www.w3.org/2000/01/rdf-schema#comment> "A textual identifier for a device."@en .
+<https://purl.org/ontomarc/onto#deviceCode> <http://www.w3.org/2000/01/rdf-schema#label> "device code"@en .
+# 
+# https://purl.org/ontomarc/onto#numericValue
+<https://purl.org/ontomarc/onto#numericValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://purl.org/ontomarc/onto#numericValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.org/ontomarc/onto#Measurement> .
+<https://purl.org/ontomarc/onto#numericValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<https://purl.org/ontomarc/onto#numericValue> <http://www.w3.org/2000/01/rdf-schema#comment> "The numeric value of a measurement."@en .
+<https://purl.org/ontomarc/onto#numericValue> <http://www.w3.org/2000/01/rdf-schema#label> "numeric value"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/ontomarc/onto#Device
+<https://purl.org/ontomarc/onto#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/ontomarc/onto#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic device used in this test ontology."@en .
+<https://purl.org/ontomarc/onto#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device"@en .
+# 
+# https://purl.org/ontomarc/onto#Measurement
+<https://purl.org/ontomarc/onto#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://purl.org/ontomarc/onto#Measurement> <http://www.w3.org/2000/01/rdf-schema#comment> "A generic measurement produced by a device."@en .
+<https://purl.org/ontomarc/onto#Measurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://purl.org/ontomarc/onto#TestDevice01
+<https://purl.org/ontomarc/onto#TestDevice01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/ontomarc/onto#TestDevice01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/ontomarc/onto#Device> .
+<https://purl.org/ontomarc/onto#TestDevice01> <https://purl.org/ontomarc/onto#recordsMeasurement> <https://purl.org/ontomarc/onto#TestMeasurement01> .
+<https://purl.org/ontomarc/onto#TestMeasurement01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://purl.org/ontomarc/onto#TestDevice01> <https://purl.org/ontomarc/onto#deviceCode> "DEV-001" .
+<https://purl.org/ontomarc/onto#TestDevice01> <http://www.w3.org/2000/01/rdf-schema#label> "Test device 01"@en .
+# 
+# https://purl.org/ontomarc/onto#TestMeasurement01
+<https://purl.org/ontomarc/onto#TestMeasurement01> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <https://purl.org/ontomarc/onto#Measurement> .
+<https://purl.org/ontomarc/onto#TestMeasurement01> <https://purl.org/ontomarc/onto#numericValue> "42.5"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<https://purl.org/ontomarc/onto#TestMeasurement01> <http://www.w3.org/2000/01/rdf-schema#label> "Test measurement 01"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

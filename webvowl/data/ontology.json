@@ -1,0 +1,182 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://purl.org/ontomarc/onto" ],
+    "title" : {
+      "en" : "Ontomarc Test Ontology"
+    },
+    "iri" : "https://purl.org/ontomarc/onto",
+    "version" : "0.0.1",
+    "author" : [ "Marco Tocco" ],
+    "description" : {
+      "en" : "A minimal test ontology created to verify PURL redirects, hash-based IRIs, and GitHub Pages publication."
+    },
+    "labels" : {
+      "en" : "Ontomarc Test Ontology"
+    },
+    "comments" : {
+      "en" : "This ontology is only a temporary test for checking stable IRIs, PURL redirects, hash-based term IRIs, and static web publication."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Marco Tocco",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "ontomarc",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.0.1",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://purl.org/ontomarc/onto#",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontomarc Test Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://purl.org/ontomarc/onto#Device",
+    "baseIri" : "https://purl.org/ontomarc/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Device",
+      "en" : "Device"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.org/ontomarc/onto#TestDevice01",
+      "baseIri" : "https://purl.org/ontomarc/onto",
+      "labels" : {
+        "IRI-based" : "TestDevice01",
+        "en" : "Test device 01"
+      }
+    } ],
+    "comment" : {
+      "en" : "A generic device used in this test ontology."
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://purl.org/ontomarc/onto#Measurement",
+    "baseIri" : "https://purl.org/ontomarc/onto",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Measurement",
+      "en" : "Measurement"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.org/ontomarc/onto#TestMeasurement01",
+      "baseIri" : "https://purl.org/ontomarc/onto",
+      "labels" : {
+        "IRI-based" : "TestMeasurement01",
+        "en" : "Test measurement 01"
+      }
+    } ],
+    "comment" : {
+      "en" : "A generic measurement produced by a device."
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://purl.org/ontomarc/onto#numericValue",
+    "baseIri" : "https://purl.org/ontomarc/onto",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "numericValue",
+      "en" : "numeric value"
+    },
+    "domain" : "1",
+    "comment" : {
+      "en" : "The numeric value of a measurement."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://purl.org/ontomarc/onto#recordsMeasurement",
+    "baseIri" : "https://purl.org/ontomarc/onto",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "recordsMeasurement",
+      "en" : "records measurement"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Links a device to a measurement it records."
+    },
+    "attributes" : [ "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://purl.org/ontomarc/onto#deviceCode",
+    "baseIri" : "https://purl.org/ontomarc/onto",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "deviceCode",
+      "en" : "device code"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "A textual identifier for a device."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "5"
+  } ]
+}

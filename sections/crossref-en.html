@@ -1,0 +1,190 @@
+<h2 id="crossreference" class="list">Cross-reference for Ontomarc Test Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by Ontomarc Test Ontology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Device" title="https://purl.org/ontomarc/onto#Device">Device</a></li>
+  <li><a href="#Measurement" title="https://purl.org/ontomarc/onto#Measurement">Measurement</a></li>
+ </ul>
+ <div class="entity" id="Device">
+  <h3>Device<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/ontomarc/onto#Device</p>
+  <div class="comment">
+   <span class="markdown">A generic device used in this test ontology.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#deviceCode" title="https://purl.org/ontomarc/onto#deviceCode">device code</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#recordsMeasurement" title="https://purl.org/ontomarc/onto#recordsMeasurement">records measurement</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#TestDevice01" title="https://purl.org/ontomarc/onto#TestDevice01">Test device 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Measurement">
+  <h3>Measurement<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/ontomarc/onto#Measurement</p>
+  <div class="comment">
+   <span class="markdown">A generic measurement produced by a device.</span>
+  </div>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#numericValue" title="https://purl.org/ontomarc/onto#numericValue">numeric value</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#recordsMeasurement" title="https://purl.org/ontomarc/onto#recordsMeasurement">records measurement</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#TestMeasurement01" title="https://purl.org/ontomarc/onto#TestMeasurement01">Test measurement 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#recordsMeasurement" title="https://purl.org/ontomarc/onto#recordsMeasurement">records measurement</a></li>
+ </ul>
+ <div class="entity" id="recordsMeasurement">
+  <h3>records measurement<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/ontomarc/onto#recordsMeasurement</p>
+  <div class="comment">
+   <span class="markdown">Links a device to a measurement it records.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="https://purl.org/ontomarc/onto#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://purl.org/ontomarc/onto#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#deviceCode" title="https://purl.org/ontomarc/onto#deviceCode">device code</a></li>
+  <li><a href="#numericValue" title="https://purl.org/ontomarc/onto#numericValue">numeric value</a></li>
+ </ul>
+ <div class="entity" id="deviceCode">
+  <h3>device code<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/ontomarc/onto#deviceCode</p>
+  <div class="comment">
+   <span class="markdown">A textual identifier for a device.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Device" title="https://purl.org/ontomarc/onto#Device">Device</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="numericValue">
+  <h3>numeric value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/ontomarc/onto#numericValue</p>
+  <div class="comment">
+   <span class="markdown">The numeric value of a measurement.</span>
+  </div>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Measurement" title="https://purl.org/ontomarc/onto#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#TestDevice01" title="https://purl.org/ontomarc/onto#TestDevice01">Test device 01</a></li>
+  <li><a href="#TestMeasurement01" title="https://purl.org/ontomarc/onto#TestMeasurement01">Test measurement 01</a></li>
+ </ul>
+ <div class="entity" id="TestDevice01">
+  <h3>Test device 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/ontomarc/onto#TestDevice01</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Device" title="https://purl.org/ontomarc/onto#Device">Device</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#recordsMeasurement" title="https://purl.org/ontomarc/onto#recordsMeasurement">records measurement</a> <sup class="type-op" title="object property">op</sup> <a href="#TestMeasurement01" title="https://purl.org/ontomarc/onto#TestMeasurement01">Test measurement 01</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+   <dd>
+    <a href="#deviceCode" title="https://purl.org/ontomarc/onto#deviceCode">device code</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"DEV-001"</span>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="TestMeasurement01">
+  <h3>Test measurement 01<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://purl.org/ontomarc/onto#TestMeasurement01</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#Measurement" title="https://purl.org/ontomarc/onto#Measurement">Measurement</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#numericValue" title="https://purl.org/ontomarc/onto#numericValue">numeric value</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"42.5"^^<a href="http://www.w3.org/2001/XMLSchema#decimal" target="_blank" title="http://www.w3.org/2001/XMLSchema#decimal">decimal</a> </span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

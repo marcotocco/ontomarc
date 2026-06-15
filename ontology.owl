@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://purl.org/ontomarc/onto#"
+     xml:base="https://purl.org/ontomarc/onto"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:onto="https://purl.org/ontomarc/onto#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://purl.org/ontomarc/onto">
+        <owl:versionIRI rdf:resource="https://purl.org/ontomarc/onto/releases/0.0.1"/>
+        <terms:creator>Marco Tocco</terms:creator>
+        <terms:description xml:lang="en">A minimal test ontology created to verify PURL redirects, hash-based IRIs, and GitHub Pages publication.</terms:description>
+        <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">Ontomarc Test Ontology</terms:title>
+        <vann:preferredNamespacePrefix>ontomarc</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri>https://purl.org/ontomarc/onto#</vann:preferredNamespaceUri>
+        <rdfs:comment xml:lang="en">This ontology is only a temporary test for checking stable IRIs, PURL redirects, hash-based term IRIs, and static web publication.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ontomarc Test Ontology</rdfs:label>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/ontomarc/onto#recordsMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.org/ontomarc/onto#recordsMeasurement">
+        <rdfs:domain rdf:resource="https://purl.org/ontomarc/onto#Device"/>
+        <rdfs:range rdf:resource="https://purl.org/ontomarc/onto#Measurement"/>
+        <rdfs:comment xml:lang="en">Links a device to a measurement it records.</rdfs:comment>
+        <rdfs:label xml:lang="en">records measurement</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/ontomarc/onto#deviceCode -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/ontomarc/onto#deviceCode">
+        <rdfs:domain rdf:resource="https://purl.org/ontomarc/onto#Device"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">A textual identifier for a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">device code</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://purl.org/ontomarc/onto#numericValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://purl.org/ontomarc/onto#numericValue">
+        <rdfs:domain rdf:resource="https://purl.org/ontomarc/onto#Measurement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <rdfs:comment xml:lang="en">The numeric value of a measurement.</rdfs:comment>
+        <rdfs:label xml:lang="en">numeric value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/ontomarc/onto#Device -->
+
+
+    <owl:Class rdf:about="https://purl.org/ontomarc/onto#Device">
+        <rdfs:comment xml:lang="en">A generic device used in this test ontology.</rdfs:comment>
+        <rdfs:label xml:lang="en">Device</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://purl.org/ontomarc/onto#Measurement -->
+
+
+    <owl:Class rdf:about="https://purl.org/ontomarc/onto#Measurement">
+        <rdfs:comment xml:lang="en">A generic measurement produced by a device.</rdfs:comment>
+        <rdfs:label xml:lang="en">Measurement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://purl.org/ontomarc/onto#TestDevice01 -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/ontomarc/onto#TestDevice01">
+        <rdf:type rdf:resource="https://purl.org/ontomarc/onto#Device"/>
+        <recordsMeasurement rdf:resource="https://purl.org/ontomarc/onto#TestMeasurement01"/>
+        <deviceCode>DEV-001</deviceCode>
+        <rdfs:label xml:lang="en">Test device 01</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://purl.org/ontomarc/onto#TestMeasurement01 -->
+
+
+    <owl:NamedIndividual rdf:about="https://purl.org/ontomarc/onto#TestMeasurement01">
+        <rdf:type rdf:resource="https://purl.org/ontomarc/onto#Measurement"/>
+        <numericValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">42.5</numericValue>
+        <rdfs:label xml:lang="en">Test measurement 01</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
